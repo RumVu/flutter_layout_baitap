@@ -14,7 +14,7 @@ class Pagetong extends StatelessWidget {
             clipper: CurveClipper(),
             child: Container(
               height: MediaQuery.of(context).size.height * 0.5,
-              color: const Color.fromARGB(255, 44, 87, 27),
+              color: const Color.fromARGB(200, 44, 87, 27),
             ),
           ),
 
@@ -27,7 +27,7 @@ class Pagetong extends StatelessWidget {
               "Complete your\ngrocery need\neasily",
               textAlign: TextAlign.center,
               style: TextStyle(
-                fontSize: 22,
+                fontSize: 40,
                 fontWeight: FontWeight.bold,
                 color: Colors.black,
               ),
@@ -39,10 +39,10 @@ class Pagetong extends StatelessWidget {
           // Button
           ElevatedButton(
             style: ElevatedButton.styleFrom(
-              backgroundColor: const Color(0xFF5A9C3F),
-              padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 14),
+              backgroundColor: const Color.fromARGB(172, 44, 87, 27),
+              padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 15),
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(30),
+                borderRadius: BorderRadius.circular(15),
               ),
             ),
             onPressed: () {},
@@ -51,7 +51,10 @@ class Pagetong extends StatelessWidget {
               children: [
                 Text(
                   "Get Started",
-                  style: TextStyle(color: Colors.white, fontSize: 16),
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold),
                 ),
                 SizedBox(width: 10),
                 Icon(Icons.arrow_forward, color: Colors.white),
